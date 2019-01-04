@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Portal upload Engpro-Arte</title>
+</head>
+
+<body>
+    <form enctype="multipart/form-data" action="http://127.0.0.1:8090/upload" method="post">
+        <input type="file" name="uploadfile" />
+        <input type="hidden" name="token" value="{{.}}" />
+        <br>
+        <input type="checkbox" name="published" value="true"> Mark as Published<br>
+        <select name="label">
+            <option value="appserver_13">appserver 13</option>
+            <option value="appserver_17">appserver 17</option>
+            <option value="smartclient_13">smartclient 13</option>
+            <option value="smartclient_17">smartclient 17</option>
+        </select>
+        <br><br>
+        <input type="submit" value="upload" />
+
+    </form>
+
+</body>
+
+</html>
